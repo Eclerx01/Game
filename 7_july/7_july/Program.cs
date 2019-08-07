@@ -12,8 +12,8 @@ namespace Game
     {
         static void Main(string[] args)
         {
-            // new GameManager().Run();
-            Database.Driver();
+            new GameManager().Run();
+            // Database.Driver();
         }
     }
 
@@ -139,7 +139,9 @@ namespace Game
             // create 100 Properties on The Board
             for (int i = 0; i < 100; i++)
             {
-                MyGameBoard.Add(new Property());
+                // MyGameBoard.Add(new Property());
+                // How can I put a INSERT statement to the GameBoard SQL Table here??
+                Database.InsertData(what parameters to pass in??? );
             }
         }
 
@@ -164,9 +166,9 @@ namespace Game
         {
             SQLiteConnection sqlite_conn;
             sqlite_conn = CreateConnection();
-            // CreateTable(sqlite_conn);
-            InsertData(sqlite_conn);
-            ReadData(sqlite_conn);
+            CreateTable(sqlite_conn);
+            //InsertData(sqlite_conn);
+            //ReadData(sqlite_conn);
         }
 
         static SQLiteConnection CreateConnection()
@@ -185,21 +187,16 @@ namespace Game
             return sqlite_conn;
         }
 
-        static void CreateTable(SQLiteConnection conn)
+        public static void CreateTable(SQLiteConnection conn)
         {
-
             SQLiteCommand sqlite_cmd;
-            string Createsql = "CREATE TABLE SampleTable (Col1 VARCHAR(20), Col2 INT)";
-            string Createsql1 = "CREATE TABLE SampleTable1 (Col1 VARCHAR(20), Col2 INT)";
+            string Createsql = "CREATE TABLE GameBoard (PropertyID INT, OwnerName VARCHAR(20), PropertyValue INT)";
             sqlite_cmd = conn.CreateCommand();
             sqlite_cmd.CommandText = Createsql;
             sqlite_cmd.ExecuteNonQuery();
-            sqlite_cmd.CommandText = Createsql1;
-            sqlite_cmd.ExecuteNonQuery();
-
         }
 
-        static void InsertData(SQLiteConnection conn)
+        public static void InsertData(SQLiteConnection conn)
         {
             SQLiteCommand sqlite_cmd;
             sqlite_cmd = conn.CreateCommand();
@@ -215,7 +212,7 @@ namespace Game
 
         }
 
-        static void ReadData(SQLiteConnection conn)
+        public static void ReadData(SQLiteConnection conn)
         {
             SQLiteDataReader sqlite_datareader;
             SQLiteCommand sqlite_cmd;

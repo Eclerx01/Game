@@ -1,0 +1,17 @@
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\7_july.exe.config
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\7_july.exe
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\7_july.pdb
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\EntityFramework.dll
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\System.Data.SQLite.dll
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\EntityFramework.xml
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\System.Data.SQLite.xml
+C:\Users\Admin\GAME\7_july\7_july\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Admin\GAME\7_july\7_july\obj\Debug\7_july.csproj.CoreCompileInputs.cache
+C:\Users\Admin\GAME\7_july\7_july\obj\Debug\7_july.csproj.CopyComplete
+C:\Users\Admin\GAME\7_july\7_july\obj\Debug\7_july.exe
+C:\Users\Admin\GAME\7_july\7_july\obj\Debug\7_july.pdb
+C:\Users\Admin\GAME\7_july\7_july\obj\Debug\7_july.csprojAssemblyReference.cache
